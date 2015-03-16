@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="author" content="Anderson Pereira" />
+  <meta name="description" content="Web Developer portfolio" />
+  <meta name="keywords"  content="portfolio,webdesign,webdeveloper,css,html5,javascript" />
+  
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#menu ul li').click(function(){
+      $('li').removeClass('active');
+      $(this).addClass('active');
+      });
+    });
+  </script>
+
+  <title>Web Design</title>
+</head>
+<body>
+  <header>
+    <h1>
+      <a href="#home"><img src="img/LogoAnderson.png" alt="logo" /></a>
+    </h1>
+
+    <input type="checkbox" id="control-nav" />
+    <label for="control-nav" class="control-nav"></label>
+    <label for="control-nav" class="control-nav-close"></label>
+
+    <nav id="menu">
+      <ul>
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="blog" target="blank">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="intro">
+    <article class="content">
+      <h2>Hi! I'm Anderson Pereira </h2> - <p> a Front-End Developer, CSS { lover } and a hobby photographer.</p>
+    </article>
+  </section>
+
+  <section id="about">  
+    <article class="content">
+      <h2>About me</h2>
+      <p>I am an international student from Brazil and currently enrolled in Business Information Technology at Red River College. I worked for two years as Web Developer in Brazil, I have experience with HTML5, CSS3 and Javascript. </p>
+      <p>I'm a CSS lover, so I enjoy spend some time creating animations and testing new css features. My hobbies are photography and soccer.</p>
+    </article>
+  </section>
+
+  <section id="projects">  
+    <article class="content">
+      <h2>Projects!</h2>
+      <ul>
+        <li><a href="http://bstech.com.br/" target="blank"><img src="img/projects/Bstech.png" alt="BsTech logo"> </a></li>
+        <li><a href="http://antunezengenharia.com.br/" target="blank"> <img src="img/projects/AntunezEngenharia.png" alt="Antunez Engenharia Website Image"></a></li>
+        <li><a href="http://www.prolifegym.com.br/" target="blank"><img src="img/projects/ProLifeGym.png" alt="Pro Life Gym logo"></a></li>
+        <li><a href="http://docefino.com.br/" target="blank"><img src="img/projects/DoceFino.png" alt="Doce Fino Website Image"></a></li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="skills">
+    <article class="content">
+      <h2>/* Skills! */</h2>
+
+      <div class="skills">
+        <ul>
+          <li>#frontEnd <span>{</span></li>
+          <li>CSS<span>:</span> <i>advanced</i><span>;</span></li>
+          <li>HTML<span>:</span> <i>advanced</i><span>;</span></li>
+          <li>JavaScript<span>: <b>basic;</b></span></li>
+          <li>Sass<span>: <b>basic;</b></span></li>
+          <li>jQuery<span>: <b>basic;</b></span></li>
+          <li>SEO<span>:</span> <div class="color">intermediate</div><span>;</span></li>
+          <li>UX<span>: <b>basic;</b></span></li>
+          <li>UI<span>: <b>basic;</b></span></li>
+          <li><span>}</span></li>
+        </ul>
+      </div>
+
+      <div class="skills">
+        <ul>
+          <li>.frameworks <span>{</span></li>
+          <li>Foundation<span>:</span> <div class="color">intermediate</div><span>;</span></li>
+          <li>BootStrap<span>:</span> <div class="color">intermediate</div><span>;</span></li>
+          <li>WordPress<span>:</span> <b>basic</b><span>;</span></li>
+          <li>CodeIgniter<span>:</span> <b>basic</b><span>;</span></li>
+          <li>Joomla<span>:</span> <div class="color">intermediate</div><span>;</span></li>
+          <li>Magento<span>:</span> <b>basic</b><span>;</span></li>
+          <li><span>}</span></li>
+        </ul>
+      </div>
+
+      <div class="skills">
+        <ul>
+          <li>#backEnd <span>{</span></li>
+          <li>PHP<span>:</span> <div class="color">intermediate</div><span>;</span></li>
+          <li>SQL<span>:</span> <i>advanced</i><span>;</span></li>
+          <li>JAVA<span>:</span> <b>basic</b><span>;</span></li>
+          <li>C<span>:</span>  <b>basic</b><span>;</span></li>
+          <li><span>}</span></li>
+        </ul>
+      </div>
+
+      <div class="skills">
+        <ul>
+          <li>.design <span>{</span></li>
+          <li>Photoshop<span>:</span><div class="color">intermediate</div><span>;</span></li>
+          <li>Ilustrator<span>:</span> <b>basic</b> <span>;</span></li>
+          <li>Fireworks<span>:</span> <i>advanced</i><span>;</span></li>
+          <li>Typography<span>:</span> <b>basic</b><span>;</span></li>
+          <li><span>}</span></li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <section id="contact">  
+    <article class="content">
+      <h2>Get In Touch</h2>
+      <form>
+        
+          <label for="name">
+            <input type="text" id="name" name="name" placeholder="Name">
+          </label>
+
+          <label for="email">
+            <input type="email" id="email" name="email" placeholder="Email">
+          </label>
+        
+
+        
+            <label for="subject">
+            <input class="subject" type="text" id="subject" name="subject" placeholder="Subject">
+          </label>
+        
+
+        <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+
+        <input type="submit" value="Send Message">
+      </form>
+
+      <aside class="info">
+
+        <p>121B Bole Street</p>
+        <p>Winnipeg - MB</p>
+        <p>Canada</p>
+
+        <p class="margin">204-806-4167</p>
+
+        <p>andersonpirespereira@hotmail.com</p>
+        
+      </aside>
+      
+    </article>
+  </section>
+
+  <footer>
+    <p>Social media:</p>
+    <ul class="social">
+      <li><a href="https://twitter.com/Andr3mo_" target="blanck"><div class="twitter"></div></a></li>
+      <li><a href="https://www.linkedin.com/profile/view?id=203949934&amp;trk=nav_responsive_tab_profile" target="blanck"><div class="linkedin"></div></a></li>
+      <li><a href="http://codepen.io/Andr3mo/" target="blanck"><div class="codepen"></div></a></li>
+      <li><a href="http://instagram.com/andr3mo" target="blanck"><div class="instagram"></div></a></li>
+      <li><a href="https://plus.google.com/u/0/105133284624713384025/about/p/pub?cfem=1" target="blanck"><div class="googleplus"></div></a></li>
+    </ul>
+    <p>Made by Anderson Pereira - 2014</p>
+  </footer>
+
+  
+</body>
+</html>

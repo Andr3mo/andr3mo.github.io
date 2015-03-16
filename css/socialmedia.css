@@ -1,0 +1,108 @@
+
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,700);
+
+@import url(http://fonts.googleapis.com/css?family=Gentium+Basic:400,700);
+
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:700);
+
+.twitter, .linkedin, .googleplus, .instagram, .facebook, .youtube {
+  font-size:8px;
+  width: 5em;
+  height: 5em;
+  border: .2em solid #000;
+  border-radius:50%;
+  display: inline-block;
+  background: #FFF;
+  cursor: pointer;
+}
+
+.twitter:after{
+  content:"t";
+  font:bold 4em 'Dosis', sans-serif;
+  position:absolute;
+  margin-left: -.15em;
+}
+
+.linkedin:after {
+  content:"in";
+  font:bold 4.3em Myriad Pro, sans-serif;
+  position:absolute;
+  margin: .1em 0 0 .17em;
+}
+
+.googleplus:before{
+  content:"g";
+  font:bold 4em 'Gentium Basic', serif;
+  position:absolute;
+  margin: -.1em .2em;
+}
+
+.googleplus:after {
+  content:"+";
+  font:bold 4em 'Gentium Basic', serif;
+  position:absolute;
+  margin: 0 .7em;
+}
+
+.instagram:before{
+  content:"";
+  position: absolute;
+  width: 2.8em;
+  height: 2.8em;
+  border: .3em solid #000;
+  border-radius: .5em;
+  margin: .8em;
+  background:
+    linear-gradient(white, white) no-repeat,
+    linear-gradient(black, black) no-repeat;
+  background-size: 7em .7em, 3em 1.3em;
+  background-position: 2.1em 0, 0 0;
+}
+
+.instagram:after{
+  content:"";
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  border: .4em solid #000;
+  background: #FFF;
+  border-radius: 50%;
+  margin: 1.7em 1.6em;
+}
+
+.facebook:after{
+  content:"f";
+  font:bold 4em 'Titillium Web', sans-serif;
+  position:absolute;
+  margin: -.15em .45em;
+}
+
+.youtube:before{
+  content:"";
+  position: absolute;
+  width: 3em;
+  height: 2.5em;
+  background: #000;
+  border-radius: .5em;
+  margin: 1.3em 1em;
+}
+
+.youtube:after{
+  content:"";
+  position: absolute;
+  width: 0;
+  height: 0;
+  background: #FFF;
+  border-top: .5em solid black;
+  border-bottom: .5em solid black;
+  border-left: .7em solid white;
+  margin: 2em 2.2em;
+}
+
+.twitter:hover, .linkedin:hover, .googleplus:hover, .instagram:hover, .facebook:hover, .youtube:hover {
+  -webkit-filter: invert(100%);
+   -moz-filter: invert(100%);
+    -ms-filter: invert(100%);
+     -o-filter: invert(100%);
+        filter: invert(100%);
+}
